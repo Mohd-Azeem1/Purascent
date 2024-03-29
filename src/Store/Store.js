@@ -1,5 +1,5 @@
 import {configureStore} from '@reduxjs/toolkit';
-import authSlice from '../../../megaproject/src/store/authSlice';
+import authSlice from './authslice';
 import bucketslice from './bucketslice';
 
 const Store = configureStore({
