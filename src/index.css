@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: arizonia;
+    src: url('./Fonts/Arizonia-Regular.ttf');
+}
+@font-face {
+    font-family: junge;
+    src: url('./Fonts/Junge-Regular.ttf');
+}
+
+.junge{
+    font-family: 'junge';
+}
+.arizonia{
+    font-family: 'arizonia';
+}
+
+#hero{
+    background-image: url("https://www.mn-net.com/media/image/72/a2/4d/Perfume-spraying-purple-1280px_1280x1280@2x.jpg");
+}
+#lb{
+    background-image: url(./images/perfumes/image.png);
+    background-size: cover;
+    background-position: center;
+}
+#mr{
+    background-image: url(./images/perfumes/Marigold.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+#logincon{
+    background-image: url(./images/pete-godfrey-mJU3FyCluiU-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+}
+#collection-photo{
+    background-image: url(./images/perfumes/perfume-collection.png);
+    background-size: cover;
+    background-position: top;
+}
+#collection-banner-photo{
+    background-image: url(./images/perfumes/perfume-collection.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#Azeem{
+    background-image: url(./images/Azeem.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+#footer{
+    background-image: url(./images/perfumes/footer-image.jpg);
+}
+
+#collection{
+    background-image: url('./images/e94f1aa90496327510426227de165d9e.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#product-card-info{
+   display: none;
+}
+
+#product-card:hover #product-card-info{
+    display: flex;
+    margin-bottom: 0;
+    transition: all 1s ease;
+}
+
+#cart{
+    background-image: url(./images/pete-godfrey-mJU3FyCluiU-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
