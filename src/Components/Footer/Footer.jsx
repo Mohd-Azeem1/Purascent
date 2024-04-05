@@ -39,7 +39,7 @@ function Footer() {
 
 
   return (
-    <div id='footer' className='w-full h-[80vh]  '>
+    <div  data-scroll data-scroll-speed="-0.1" id='footer' className='w-full h-[80vh] z-10 '>
       <div className='w-full h-full shadow-[0px_-10px_10px_10px_rgba(0,0,0,0.4)] backdrop-blur-sm bg-[#0000002a]  flex justify-center items-center gap-5 junge flex-wrap text-[1.5vw]'>
 
         <div className=' w-[17vw] h-[60%]  text-[#fff] flex flex-col justify-between '>
@@ -70,7 +70,7 @@ function Footer() {
           {footeritems.map((item)=>(<li key={item.name} className='mb-3 '><button className='text-[#ffffffa0] hover:text-white hover:scale-[1.05] hover:tracking-widest transition-all' onClick={()=>{navigate(item.slug)}}>{item.name}</button></li>))}
         </ul>
         <div className='flex gap-5'>
-        <img className='w-[1.8vw] h-[1.8vw] hover:scale-[1.08] transition-all object-cover object-center' src="https://upload.wikimedia.org/wikipedia/commons/2/28/Instagram_logo.png" alt="" />
+        <a href="https://www.instagram.com/m0hammadazeem" target="_blank"><img className='w-[1.8vw] h-[1.8vw] hover:scale-[1.08] transition-all object-cover object-center' src="https://upload.wikimedia.org/wikipedia/commons/2/28/Instagram_logo.png" alt="" /></a>
         <img className='w-[1.8vw] h-[1.8vw] hover:scale-[1.08] transition-all object-contain object-center' src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="" />
         </div>
         </div>

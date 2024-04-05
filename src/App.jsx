@@ -5,10 +5,16 @@ import {authService} from './Appwrite/auth'
 import { login, logout } from './Store/authslice'
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
-
 import { Outlet } from 'react-router-dom'
+import LocomotiveScroll from 'locomotive-scroll';
+
 
 function App() {
+
+
+  const locomotiveScroll = new LocomotiveScroll();
+  
+
   const [loading, setLoading] = useState(true)
   const dispatch = useDispatch()
 
@@ -25,14 +31,16 @@ function App() {
     .finally(()=>setLoading(false))
   },[])
 
+  
+
   return loading ? (
-    <div></div>
+    <div className='w-screen h-screen'></div>
   ) : (
-    <>
+    <div className='bg-black overflow-x-hidden'>
     <Header />
     <Outlet />
     <Footer />
-    </>
+    </div>
   )
 }
 

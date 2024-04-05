@@ -38,7 +38,7 @@ const navItems = [
   return (
     <header className='w-full z-[99] h-[10vh] fixed text-[#F8CBFF] backdrop-blur-[2vw]  justify-between items-center px-12 py-8 flex junge'>
       <div className='w-[10vw] flex'>
-          <Link className='hover:tracking-widest hover:scale-[1.05] transition-all text-2xl hover:shadow-xl justify-center items-center shadow-[#F8CBFF]' to={"/"}>PURASCENT</Link>
+          <Link className='hover:tracking-widest hover:scale-[1.05] transition-all text-2xl  justify-center items-center shadow-[#F8CBFF]' to={"/"}>PURASCENT</Link>
       </div>
 
      <ul className='flex gap-[2vw] tracking-wider'>

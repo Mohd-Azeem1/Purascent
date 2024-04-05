@@ -28,7 +28,7 @@ function CartProduct({id, title='perfume', description, price, image}) {
 
         <div>
           <h1 className=' text-white text-[1.8vw] mb-3 '>{title}</h1>
-          <h3 className='text-white text-[1vw]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, nulla!</h3>
+          <h3 className='text-white text-[1vw]'>{description}</h3>
         </div>
 
         <h1 className='junge text-white'>Price: <span className='text-[#F8CBFF]'>$ {price}</span></h1>

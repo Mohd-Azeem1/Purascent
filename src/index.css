@@ -48,6 +48,31 @@
     background-size: cover;
     background-position: center;
 }
+#About-banner-photo{
+    background-image: url(./images/about_banner_photo.png);
+    background-size: cover;
+    background-position: center;
+}
+#contact-banner-photo{
+    background-image: url(./images/about_page_first_image.png);
+    background-size: cover;
+    background-position: center;
+}
+#about-1st-image{
+    background-image: url(./images/about_page_first_image.png);
+    background-size: cover;
+    background-position: center;
+}
+#about-2nd-image{
+    background-image: url(./images/about_second-image.png);
+    background-size: cover;
+    background-position: center;
+}
+#about-our-project{
+    background-image: url(./images/perfume-display-cubes.jpg.webp);
+    background-size: cover;
+    background-position: center;
+}
 
 #Azeem{
     background-image: url(./images/Azeem.jpg);

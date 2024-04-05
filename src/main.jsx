@@ -10,6 +10,9 @@ import Login from './Components/Login.jsx'
 import Collection from './Components/Collection.jsx'
 import Cart from './Components/Cart/Cart.jsx'
 import SignUp from './Components/SignUp.jsx'
+import About from './Components/About.jsx'
+import LinkedInlink from './Components/LinkedInLink.jsx'
+import Contact from './Components/Contact.jsx'
 
 
 
@@ -22,6 +25,9 @@ const router = createBrowserRouter(
       <Route path='signup' element={<SignUp />}/>
       <Route path='collection' element={<Collection />}/>
       <Route path='cart' element={<Cart />}/>
+      <Route path='about' element={<About />}/>
+      <Route path='contact' element={<Contact />}/>
+      <Route path='linkedin' element={<LinkedInlink />}/>
     </Route>       
   )
 )
