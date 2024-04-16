@@ -137,9 +137,9 @@ function About() {
         <div className="w-full h-[8vh] bg-[#714486] junge  px-10 text-white flex justify-center items-center">
           <h1 className="text-[1.5vw] ">ABOUT US</h1>
         </div>
-        <div className="flex flex-col junge justify-center items-center p-20 text-white w-full min-h-screen backdrop-blur-md">
-          <div id="page1" className=" w-full h-[70vh] flex justify-center items-center">
-            <div className=" about h-full w-1/2 p-18 pr-24 p-10">
+        <div className="flex flex-col junge justify-center items-center p-[5vw] text-white w-full min-h-screen backdrop-blur-md">
+          <div id="page1" className=" w-full h-[40vw] flex justify-center items-center">
+            <div className=" about h-full w-1/2 p-[4vw] pr-[5vw] ">
               <h1 className="arizonia text-[3vw] text-[#EABEFF]">
                 About Purascent
               </h1>
@@ -157,11 +157,11 @@ function About() {
             </div>
           </div>
 
-          <div id="page2" className="w-full h-[70vh] flex justify-center items-center mt-5">
+          <div id="page2" className="w-full h-[40vw] flex justify-center items-center mt-5">
             <div className="h-full w-1/2 p-[5vw]">
               <div id="about-2nd-image" className="w-full h-full"></div>
             </div>
-            <div className=" vision h-full w-1/2 p-18 pl-24">
+            <div className=" vision h-full w-1/2 p-[4vw] pl-[5vw]">
               <h1 className="arizonia text-[3vw] text-[#EABEFF]">Our Vision</h1>
               <h2 className="junge text-[1.5vw]">
                 Welcome to Purascent, a conceptual perfume store created for the
