@@ -117,8 +117,8 @@ function About() {
         trigger: '#page3',
         target: '.creator',
         scrub: 4,
-        start: '60% 50%',
-        end: '60% 15%'
+        start: '85% 90%',
+        end: '85% 65%'
       }
     })
   },[])
@@ -173,7 +173,7 @@ function About() {
               </h2>
             </div>
           </div>
-          <div className="concept w-full h-[50vh] flex flex-col justify-center items-center mt-5  px-[18vw]">
+          <div className="concept w-full  flex flex-col justify-center items-center mt-5  px-[18vw]">
             <h1 className="arizonia text-[3vw] text-[#EABEFF]">Our Concept</h1>
             <h3 className="junge text-[1vw] text-center">
               At Purascent, we embrace the fusion of artistry and technology to
@@ -187,9 +187,9 @@ function About() {
           
         </div>
       </div>
-      <div id="cart" className="w-full min-h-screen">
-        <div id="page3" className="flex flex-col junge justify-center items-center p-20 text-white w-full min-h-screen backdrop-blur-md">
-          <div className=" project w-full h-[60vh] flex flex-col justify-center items-center mt-5 px-[18vw]">
+      <div id="cart" className="w-full ">
+        <div id="page3" className="flex flex-col junge justify-center items-center p-[4.5vw] text-white w-full  backdrop-blur-md">
+          <div className=" project w-full h-[40vw] flex flex-col justify-center items-center mt-5 px-[18vw]">
             <h1 className="arizonia text-[3vw] text-[#EABEFF]">Our Project</h1>
             <div id="about-our-project" className="w-full h-full my-3"></div>
             <h3 className="junge text-[1vw] text-center">
@@ -200,11 +200,11 @@ function About() {
               and creativity with Purascent.
             </h3>
           </div>
-          <div className=" creator w-full h-[60vh] flex flex-col justify-center items-center mt-5 px-[18vw]">
+          <div className=" creator w-full  flex flex-col justify-center items-center mt-5 px-[18vw]">
             <h1 className="arizonia text-[3vw] text-[#EABEFF]">Our Creator</h1>
             <div className="flex">
               <div id="Azeem" className="w-[30vw] h-[9vw] rounded-full"></div>
-              <h3 className="junge text-[1vw] p-5 pl-10">
+              <h3 className="junge text-[1vw] py-[2vw] px-[3.5vw]">
                 This website serves as a platform to showcase the culmination of
                 our exploration into the realm of digital fragrance experiences.
                 Through innovative design, engaging content, and immersive
@@ -213,7 +213,7 @@ function About() {
               </h3>
             </div>
           </div>
-          <div className="contact w-full h-[60vh] flex flex-col justify-center items-center mt-5 px-[18vw]">
+          <div className="contact w-full  flex flex-col justify-center items-center my-7 px-[18vw]">
             <h1 className="arizonia text-[3vw] text-[#EABEFF]">Contact Us</h1>
             
             <h3 className="junge text-[1vw] text-center mb-10">

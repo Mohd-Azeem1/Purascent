@@ -15,7 +15,7 @@ function Contact() {
         <div className="w-full h-[8vh] bg-[#714486] junge  px-10 text-white flex justify-center items-center">
           <h1 className="text-[1.5vw] ">Contact US</h1>
         </div>
-        <div className="flex flex-col junge justify-start gap-5 items-start p-20 text-white w-full min-h-screen backdrop-blur-md">
+        <div className="flex flex-col junge justify-start gap-5 items-start p-[5vw] text-white w-full min-h-screen backdrop-blur-md">
           <div>
             <h1 className="junge text-[2vw]">
               Have a question or feedback? We'd love to hear from you! Reach out
