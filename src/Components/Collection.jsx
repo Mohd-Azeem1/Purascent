@@ -10,18 +10,18 @@ function Collection() {
       <div id='collection-banner-photo' className='w-full h-[20vw] flex flex-wrap justify-between'>
 
       </div>
-      <div className='w-full h-[10vh] bg-[#714486] junge  px-10 text-white items-center'>
+      <div className='w-full h-[7vw] bg-[#714486] junge  px-10 text-white items-center'>
         <h1 className='text-[1.5vw] '>Products</h1>
 
         <div className='flex justify-between w-[70vw] '>
 
-        <div className='flex justify-between w-[10%]'>
+        <div className='flex justify-between w-[10%] text-[1.8vw]'>
           <FontAwesomeIcon icon={faFilter} />
           <h4>Filter</h4>
         </div>
 
 
-        <div className='flex items-center justify-between w-[40vw]'>
+        <div className='flex items-center text-[1.6vw] justify-between w-[40vw]'>
           
               <h3>All</h3>
               <h3>Best Seller</h3>

@@ -82,6 +82,8 @@
 
 #footer{
     background-image: url(./images/perfumes/footer-image.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 #collection{
@@ -90,9 +92,7 @@
     background-size: cover;
 }
 
-#product-card-info{
-   display: none;
-}
+
 
 #product-card:hover #product-card-info{
     display: flex;
