@@ -122,7 +122,7 @@ useGSAP(()=>{
 
   return (
     <div className='w-full min-h-screen relative overflow-y-hidden  bg-[#3A0D4F]'>
-    <div id='loader' className=' w-full h-screen bg-[#3A0D4F] junge text-[#EABEFF] text-[1.5vw] flex justify-center items-center gap-2 absolute z-[999]'>
+    <div id='loader' className=' w-full h-screen bg-[#3A0D4F] junge text-[#EABEFF] text-[2.5vh] flex justify-center items-center gap-2 absolute z-[999]'>
         
         <h1>Wellcome</h1>
         <h1>to</h1>
@@ -139,26 +139,26 @@ useGSAP(()=>{
           <h1 className='text-[7vw] overflow-hidden font-light text-[#fff]'>{['P','U','R','A','S','C','E','N','T'].map((item => <span key={item} className='inline-block words' >{item}</span>))}</h1>
           </div>
 
-          <h2 className='words text-[2vw] font-light text-[#fff]'>Feel good, smell grate</h2>
-          <h2 className='words text-[2vw] mb-8 text-[#fff]'>it’s your signature</h2>
+          <h2 className='words md:text-[2vw] text-[2.5vw] font-light text-[#fff]'>Feel good, smell grate</h2>
+          <h2 className='words md:text-[2vw] text-[2.5vw] mb-8 text-[#fff]'>it’s your signature</h2>
           <div id='first_visit_button' className=''> 
-          <Link to={'collection'}  className=' p-4 py-1.5 hover:scale-[1.05] hover:tracking-wide transition-all junge text-white text-[2vw] border-2 rounded-2xl rounded-bl-none  border-white backdrop-blur-sm bg-[#ffffff24]'>Visit Collection</Link>
+          <Link to={'collection'}  className=' p-4 py-1.5 hover:scale-[1.05] hover:tracking-wide transition-all junge text-white md:text-[2vw] text-[2.5vw] border-2 rounded-2xl rounded-bl-none  border-white backdrop-blur-sm bg-[#ffffff24]'>Visit Collection</Link>
           </div>
         </div>
       </div>
 
       <div id='page1' className='w-full md:min-h-[35vw]   overflow-y-visible flex'>
         <div data-scroll data-scroll-speed="0.2" className='w-1/2 h-[100%] -mt-[.1vh] overflow-y-visible flex'>
-          <img  className='ml-[35%]  z-20 md:h-[40vw] h-[30vh] w-3/6 object-cover hover:scale-[1.05] transition-all object-center border-[1px] shadow-black shadow-lg border-white' src="https://t4.ftcdn.net/jpg/06/58/87/17/360_F_658871707_wFzOOLc7seDjq8ieOi6fgPExuXW16BoE.jpg" alt="" />
+          <img  className='md:ml-[35%] ml-[20%]  z-20 md:h-[40vw] h-[36vh] w-[70%] object-cover hover:scale-[1.05] transition-all object-center border-[1px] shadow-black shadow-lg border-white' src="https://t4.ftcdn.net/jpg/06/58/87/17/360_F_658871707_wFzOOLc7seDjq8ieOi6fgPExuXW16BoE.jpg" alt="" />
         </div>
         <div className='w-1/2 h-[100%] text-[#EABEFF] flex flex-col gap-[3vw]'>
 
           <div>
-          <h1 className=' first_articl arizonia text-[2.5vw] w-[30vw]  stroke-dash-1 stroke-black mt-12'>Bloom in Elegance <span className='inline-block'>Discover Ethereal Essence</span></h1>
-          <h3 className=' first_articl junge w-[30vw] text-[1.7vw]'>Ethereal Essence perfume captivates with its delicate blend of jasmine, rose, and magnolia. Experience floral bliss in every spritz, a gentle reminder of nature's beauty. Embark on a journey of elegance and grace with Ethereal Essence – your signature scent awaits.</h3>
+          <h1 className=' first_articl arizonia md:text-[2.5vw] text-[4vw] w-[30vw]  stroke-dash-1 stroke-black mt-12'>Bloom in Elegance <span className='inline-block'>Discover Ethereal Essence</span></h1>
+          <h3 className=' first_articl junge md:w-[30vw] w-[42vw] md:text-[1.7vw] text-[3vw]'>Ethereal Essence perfume captivates with its delicate blend of jasmine, rose, and magnolia. Experience floral bliss in every spritz, a gentle reminder of nature's beauty. Embark on a journey of elegance and grace with Ethereal Essence – your signature scent awaits.</h3>
           </div>
 
-          <Link to={'collection'} className='junge w-fit border-[1px] bg-[#EABEFF] hover:text-[1.4vw] text-[1.3vw] transition-all text-black border-[#EABEFF] px-[1.3vw] py-[0.5vw] rounded-2xl rounded-bl-none'>VISIT</Link>
+          <Link to={'collection'} className='junge w-fit border-[1px] bg-[#EABEFF] hover:scale-[1.2] md:text-[1.3vw] text-[3vw] transition-all text-black border-[#EABEFF] px-[1.3vw] py-[0.5vw] rounded-2xl rounded-bl-none'>VISIT</Link>
           
         </div>
 
