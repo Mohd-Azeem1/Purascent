@@ -137,7 +137,7 @@ function About() {
         <div className="w-full h-[8vh] bg-[#714486] junge  px-10 text-white flex justify-center items-center">
           <h1 className="md:text-[1.5vw] text-[4vw]">ABOUT US</h1>
         </div>
-        <div className="flex flex-col junge justify-center items-center p-[5vw] text-white w-full min-h-screen backdrop-blur-md">
+        <div className="flex flex-col junge justify-center items-center p-[5vw] text-white w-full  backdrop-blur-md">
           <div id="page1" className=" w-full md:h-[40vw] flex justify-center items-center">
             <div className=" about h-full w-1/2 p-[4vw] pr-[5vw] ">
               <h1 className="arizonia md:text-[3vw] text-[5vw] text-[#EABEFF]">
@@ -159,7 +159,7 @@ function About() {
 
           <div id="page2" className="w-full md:h-[40vw] flex justify-center items-center mt-5">
             <div className="h-full w-1/2 p-[5vw]">
-              <div id="about-2nd-image" className="md:h-full md:w-1/2 h-[50vw] w-[40vw]"></div>
+              <div id="about-2nd-image" className="md:h-full md:w-full h-[50vw] w-[40vw]"></div>
             </div>
             <div className=" vision h-full w-1/2 p-[4vw] pl-[5vw]">
               <h1 className="arizonia md:text-[3vw] text-[5vw] text-[#EABEFF]">Our Vision</h1>
@@ -190,7 +190,7 @@ function About() {
       <div id="cart" className="w-full ">
         <div id="page3" className="flex flex-col junge justify-center items-center p-[4.5vw] text-white w-full  backdrop-blur-md">
           <div className=" project w-full md:h-[40vw] flex flex-col justify-center items-center mt-5 md:px-[18vw]">
-            <h1 className="arizonia md:text-[3vw] text-[5vw] text-[#EABEFF]">Our Project</h1>
+            <h1 className="arizonia max-md:w-full text-center md:text-[3vw] text-[5vw] text-[#EABEFF]">Our Project</h1>
             <div id="about-our-project" className="md:w-full md:h-full w-[80vw] h-[50vw] my-3"></div>
             <h3 className="junge md:text-[1vw] text-[2.5vw] text-center">
               This website serves as a platform to showcase the culmination of
@@ -201,7 +201,7 @@ function About() {
             </h3>
           </div>
           <div className=" creator w-full  flex flex-col justify-center items-center mt-5 md:px-[6vw]">
-            <h1 className="arizonia md:text-[3vw] text-[5vw] text-[#EABEFF]">Our Creator</h1>
+            <h1 className="arizonia max-md:w-full text-center md:text-[3vw] text-[5vw] text-[#EABEFF]">Our Creator</h1>
             <div className="flex md:flex-row flex-col items-center">
               <div id="Azeem" className="w-[20vw] h-[20vw] rounded-full"></div>
               <h3 className="junge md:w-[60vw] md:text-[1vw] text-[2.5vw] py-[2vw] px-[3.5vw]">
@@ -214,7 +214,7 @@ function About() {
             </div>
           </div>
           <div className="contact w-full  flex flex-col justify-center items-center my-7 md:px-[18vw]">
-            <h1 className="arizonia md:text-[3vw] text-[5vw] text-[#EABEFF]">Contact Us</h1>
+            <h1 className="arizonia max-md:w-full text-center md:text-[3vw] text-[5vw] text-[#EABEFF]">Contact Us</h1>
             
             <h3 className="junge md:text-[1vw] text-[2.5vw] text-center mb-10">
               While Purascent may be a fictional brand, your feedback and

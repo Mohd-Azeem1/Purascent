@@ -29,35 +29,35 @@ function Contact() {
               you as soon as possible.
             </h2>
             <h1 className="arizonia md:text-[2.5vw] text-[5vw] text-[#EABEFF]">Phone</h1>
-            <h2 className="junge md:text-[1.5vw] text-[3vw]">
+            <h2 className="junge max-md:w-[full] text-center md:text-[1.5vw] text-[3vw]">
               Prefer to talk to us directly?{" "}
             </h2>
-            <h2 className="junge md:text-[1.5vw] text-[3vw]">
+            <h2 className="junge max-md:w-[full] text-center md:text-[1.5vw] text-[3vw]">
               Give us a call at +91 707-826-1344 during our business hours:
             </h2>
             <div className="text-center">
-              <h2 className="junge md:text-[1.2vw] text-[3vw]">
+              <h2 className="junge max-md:w-[full] text-center md:text-[1.2vw] text-[3vw]">
                 Monday to Friday: 9:00 AM - 6:00 PM (EST)
               </h2>
-              <h2 className="junge md:text-[1.2vw] text-[3vw]">
+              <h2 className="junge max-md:w-[full] text-center md:text-[1.2vw] text-[3vw]">
                 Saturday: 10:00 AM - 4:00 PM (EST)
               </h2>
               <h2 className="junge md:text-[1.2vw] text-[3vw]">Sunday: Closed</h2>
             </div>
             <h1 className="arizonia md:text-[2.5vw] text-[5vw] text-[#EABEFF]">Address</h1>
-            <h2 className="junge md:text-[1.5vw] text-[3vw]">
+            <h2 className="junge max-md:w-[full] text-center md:text-[1.5vw] text-[3vw]">
               You can also visit us at our physical location:
             </h2>
             <div className="text-center">
-              <h2 className="junge md:text-[1.2vw] text-[3vw]">Purascent Headquarters</h2>
-              <h2 className="junge md:text-[1.2vw] text-[3vw]">123 Fragrance Avenue</h2>
-              <h2 className="junge md:text-[1.2vw] text-[3vw]">Cityville, State, Zip Code</h2>
-              <h2 className="junge md:text-[1.2vw] text-[3vw]">Country</h2>
+              <h2 className="junge max-md:w-[w-full] md:text-[1.2vw] text-[3vw]">Purascent Headquarters</h2>
+              <h2 className="junge max-md:w-[w-full] md:text-[1.2vw] text-[3vw]">123 Fragrance Avenue</h2>
+              <h2 className="junge max-md:w-[w-full] md:text-[1.2vw] text-[3vw]">Cityville, State, Zip Code</h2>
+              <h2 className="junge max-md:w-[w-full] md:text-[1.2vw] text-[3vw]">Country</h2>
             </div>
             <h1 className="arizonia md:text-[2.5vw] text-[5vw] text-[#EABEFF]">
               Social Media
             </h1>
-            <h2 className="junge md:text-[1.5vw] text-[3vw]">
+            <h2 className="junge max-md:w-full text-center md:text-[1.5vw] text-[3vw]">
               Stay connected with us on social media:
             </h2>
             <div className="text-center">
@@ -89,7 +89,7 @@ function Contact() {
                 </a>
               </h2>
             </div>
-            <h1 className="arizonia text-[2.5vw] text-[#EABEFF] mt-8">
+            <h1 className="arizonia max-md:w-full text-center md:text-[2.5vw] text-[3vw] text-[#EABEFF] mt-8">
             Thank you for choosing Purascent. We look forward to hearing from you!
             </h1>
           </div>
