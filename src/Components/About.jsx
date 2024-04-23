@@ -174,7 +174,7 @@ function About() {
             </div>
           </div>
           <div className="concept w-full  flex flex-col justify-center items-center mt-5  md:px-[18vw]">
-            <h1 className="arizonia md:text-[3vw] text-[5vw] text-[#EABEFF]">Our Concept</h1>
+            <h1 className="arizonia max-md:w-full text-center md:text-[3vw] text-[5vw] text-[#EABEFF]">Our Concept</h1>
             <h3 className="junge md:text-[1vw] text-[2.5vw] text-center">
               At Purascent, we embrace the fusion of artistry and technology to
               create a curated selection of imaginary fragrances that reflect
