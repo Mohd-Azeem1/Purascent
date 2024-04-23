@@ -149,13 +149,13 @@ useGSAP(()=>{
 
       <div id='page1' className='w-full md:min-h-[35vw]   overflow-y-visible flex'>
         <div data-scroll data-scroll-speed="0.2" className='w-1/2 h-[100%] -mt-[.1vh] overflow-y-visible flex'>
-          <img  className='md:ml-[35%] ml-[20%]  z-20 md:h-[40vw] h-[36vh] w-[70%] object-cover hover:scale-[1.05] transition-all object-center border-[1px] shadow-black shadow-lg border-white' src="https://t4.ftcdn.net/jpg/06/58/87/17/360_F_658871707_wFzOOLc7seDjq8ieOi6fgPExuXW16BoE.jpg" alt="" />
+          <img  className='md:ml-[35%] ml-[20%]  z-20 md:h-[40vw] h-[36vh] md:w-3/6 w-[70%] object-cover hover:scale-[1.05] transition-all object-center border-[1px] shadow-black shadow-lg border-white' src="https://t4.ftcdn.net/jpg/06/58/87/17/360_F_658871707_wFzOOLc7seDjq8ieOi6fgPExuXW16BoE.jpg" alt="" />
         </div>
         <div className='w-1/2 h-[100%] text-[#EABEFF] flex flex-col gap-[3vw]'>
 
           <div>
-          <h1 className=' first_articl arizonia md:text-[2.5vw] text-[4vw] w-[30vw]  stroke-dash-1 stroke-black mt-12'>Bloom in Elegance <span className='inline-block'>Discover Ethereal Essence</span></h1>
-          <h3 className=' first_articl junge md:w-[30vw] w-[42vw] md:text-[1.7vw] text-[3vw]'>Ethereal Essence perfume captivates with its delicate blend of jasmine, rose, and magnolia. Experience floral bliss in every spritz, a gentle reminder of nature's beauty. Embark on a journey of elegance and grace with Ethereal Essence – your signature scent awaits.</h3>
+          <h1 className=' first_articl arizonia md:text-[2.5vw] text-[4vw] w-[30vw] md:leading-none leading-tight stroke-dash-1 stroke-black mt-12'>Bloom in Elegance <span className='inline-block'>Discover Ethereal Essence</span></h1>
+          <h3 className=' first_articl junge md:w-[30vw] w-[42vw] md:text-[1.7vw] text-[3vw] md:leading-none leading-tight'>Ethereal Essence perfume captivates with its delicate blend of jasmine, rose, and magnolia. Experience floral bliss in every spritz, a gentle reminder of nature's beauty. Embark on a journey of elegance and grace with Ethereal Essence – your signature scent awaits.</h3>
           </div>
 
           <Link to={'collection'} className='junge w-fit border-[1px] bg-[#EABEFF] hover:scale-[1.2] md:text-[1.3vw] text-[3vw] transition-all text-black border-[#EABEFF] px-[1.3vw] py-[0.5vw] rounded-2xl rounded-bl-none'>VISIT</Link>
@@ -164,16 +164,16 @@ useGSAP(()=>{
 
       </div>
 
-      <div id='page2' className='w-full md:h-[45vw] overflow-y-visible flex'>
+      <div id='page2' className='w-full md:h-[45vw] mb-7 overflow-y-visible flex'>
         
-        <div className='w-[50vw] ml-[13vw] h-[100%] text-[#EABEFF] relative'>
-          <h1 className='second_articl arizonia  text-[2.5vw] w-[40vw]  stroke-dash-1 stroke-black mt-12'>Petals of Passion <span className='inline-block'>Adorn Yourself in Rose Elegance</span></h1>
-          <h3 className='second_articl junge mb-[1vw] w-[30vw] text-[1.7vw]'>Immerse yourself in the timeless allure of our Rose Elegance perfume. Each drop is a poetic dance of fresh rose petals. This enchanting fragrance is a celebration of romance and femininity, a fragrant ode to the beauty of blooming roses. Unveil the essence of passion with Rose Elegance – an exquisite bouquet for the modern romantic.</h3>
-          <Link to={'collection'} className='junge border-[1px] bg-[#EABEFF]  text-black border-[#EABEFF] text-[1.3vw] hover:text-[1.4vw] transition-all px-[1.3vw] py-[0.5vw] rounded-2xl rounded-bl-none'>VISIT</Link>
+        <div className='w-[50vw] ml-[10vw] h-[100%] text-[#EABEFF] relative'>
+          <h1 className='second_articl arizonia  md:text-[2.5vw] text-[4vw] w-[30vw] md:leading-none leading-tight stroke-dash-1 stroke-black mt-12'>Petals of Passion <span className='inline-block'>Adorn Yourself in Rose Elegance</span></h1>
+          <h3 className='second_articl junge mb-[1vw] md:w-[30vw] w-[42vw] md:text-[1.7vw] text-[3vw] md:leading-none leading-tight'>Immerse yourself in the timeless allure of our Rose Elegance perfume. Each drop is a poetic dance of fresh rose petals. This enchanting fragrance is a celebration of romance and femininity, a fragrant ode to the beauty of blooming roses. Unveil the essence of passion with Rose Elegance – an exquisite bouquet for the modern romantic.</h3>
+          <Link to={'collection'} className='junge border-[1px] bg-[#EABEFF]  text-black border-[#EABEFF] hover:scale-[1.2] md:text-[1.3vw] text-[3vw] transition-all px-[1.3vw] py-[0.5vw] rounded-2xl rounded-bl-none'>VISIT</Link>
         </div>
 
         <div data-scroll data-scroll-speed="0.2" className='w-[60%] h-[100%] overflow-y-visible'>
-          <img className=' md:-mt-10 mt-10 z-20 h-[30vh] md:h-[40vw] w-3/6 object-cover hover:scale-[1.05] transition-all object-center border-[1px] shadow-black shadow-lg border-white' src="https://pics.craiyon.com/2024-01-24/F3is5AMKRZ6bMvPKu6MS7g.webp" alt="" />
+          <img className=' ml-[5.5vw] md:-mt-10 mt-20 z-20 md:h-[40vw] h-[36vh] md:w-3/6 w-[70%] object-cover hover:scale-[1.05] transition-all object-center border-[1px] shadow-black shadow-lg border-white' src="https://pics.craiyon.com/2024-01-24/F3is5AMKRZ6bMvPKu6MS7g.webp" alt="" />
         </div>
 
       </div>
@@ -221,12 +221,12 @@ useGSAP(()=>{
 
       <div id='page3' className='w-full   overflow-y-visible flex '>
         <div data-scroll data-scroll-speed="0.2" className='w-1/2 h-[100%] overflow-y-visible flex'>
-          <img className='ml-[35%] -mt-10 z-20 md:h-[40vw] h-[30vh] w-3/6 object-cover hover:scale-[1.05] transition-all object-center border-[1px] shadow-black shadow-lg border-white' src="https://static.vecteezy.com/system/resources/previews/024/056/989/large_2x/a-high-class-bottle-of-glass-perfume-with-light-red-liquid-aromatic-perfume-bottles-on-white-background-beauty-product-cosmetic-perfume-day-fragrance-day-or-perfume-launch-event-by-ai-generated-free-photo.jpg" alt="" />
+          <img className='md:ml-[35%] ml-[20%] -mt-10 z-20 md:h-[40vw] h-[36vh] md:w-3/6 w-[70%] object-cover hover:scale-[1.05] transition-all object-center border-[1px] shadow-black shadow-lg border-white' src="https://static.vecteezy.com/system/resources/previews/024/056/989/large_2x/a-high-class-bottle-of-glass-perfume-with-light-red-liquid-aromatic-perfume-bottles-on-white-background-beauty-product-cosmetic-perfume-day-fragrance-day-or-perfume-launch-event-by-ai-generated-free-photo.jpg" alt="" />
         </div>
         <div className='w-1/2 h-[100%] text-[#EABEFF] flex flex-col gap-[3vw]'>
           <div>
-          <h1 className='third_articl arizonia text-[2.5vw]   stroke-dash-1 stroke-black mt-12'>Embrace Every Moment with Day Perfumes: <span className='inline-block'> Radiance in a Bottle</span></h1>
-          <h3 className='third_articl junge w-[30vw] text-[1.7vw]'>Experience the essence of sunshine with our exclusive collection of day perfumes. Crafted to complement your daytime adventures, each fragrance captures the vibrancy and freshness of the day. From floral bouquets to citrus bursts, our scents evoke the joy of new beginnings and the beauty of everyday moments. Embrace the warmth of the sun and radiate confidence with our irresistible day perfumes.</h3>
+          <h1 className='third_articl arizonia  md:text-[2.5vw] text-[4vw] w-[30vw] md:leading-none leading-tight stroke-dash-1 stroke-black mt-12'>Embrace Every Moment with Day Perfumes: <span className='inline-block'> Radiance in a Bottle</span></h1>
+          <h3 className='third_articl junge md:w-[30vw] w-[42vw] md:text-[1.7vw] text-[3vw] md:leading-none leading-tight'>Experience the essence of sunshine with our exclusive collection of day perfumes. Crafted to complement your daytime adventures, each fragrance captures the vibrancy and freshness of the day. From floral bouquets to citrus bursts, our scents evoke the joy of new beginnings and the beauty of everyday moments. Embrace the warmth of the sun and radiate confidence with our irresistible day perfumes.</h3>
           </div>
           <Link to={'collection'} className='junge w-fit border-[1px] bg-[#EABEFF] hover:text-[1.4vw] text-[1.3vw] transition-all text-black border-[#EABEFF] px-[1.3vw] py-[0.5vw] rounded-2xl rounded-bl-none'>VISIT</Link>
           
@@ -242,15 +242,15 @@ useGSAP(()=>{
         
         <div className='w-[50vw] ml-[13vw] h-[100%] text-[#EABEFF] flex flex-col gap-[3vw]'>
           <div>
-          <h1 className=' fourth_articl arizonia  text-[2.5vw] w-[40vw]  stroke-dash-1 stroke-black mt-12'>Petals of Passion <span className='inline-block'>Adorn Yourself in Rose Elegance</span></h1>
-          <h3 className=' fourth_articl junge  w-[30vw] text-[1.7vw]'>Immerse yourself in the timeless allure of our Rose Elegance perfume. Each drop is a poetic dance of fresh rose petals. This enchanting fragrance is a celebration of romance and femininity, a fragrant ode to the beauty of blooming roses. Unveil the essence of passion with Rose Elegance – an exquisite bouquet for the modern romantic.</h3>
+          <h1 className=' fourth_articl arizonia  md:text-[2.5vw] text-[4vw] w-[30vw] md:leading-none leading-tight stroke-dash-1 stroke-black mt-12'>Petals of Passion <span className='inline-block'>Adorn Yourself in Rose Elegance</span></h1>
+          <h3 className=' fourth_articl junge md:w-[30vw] w-[42vw] md:text-[1.7vw] text-[3vw] md:leading-none leading-tight'>Immerse yourself in the timeless allure of our Rose Elegance perfume. Each drop is a poetic dance of fresh rose petals. This enchanting fragrance is a celebration of romance and femininity, a fragrant ode to the beauty of blooming roses. Unveil the essence of passion with Rose Elegance – an exquisite bouquet for the modern romantic.</h3>
           </div>
           <Link to={'collection'} className='junge w-fit border-[1px] bg-[#EABEFF] hover:text-[1.4vw] text-[1.3vw] transition-all text-black border-[#EABEFF] px-[1.3vw] py-[0.5vw] rounded-2xl rounded-bl-none'>VISIT</Link>
           
         </div>
 
         <div data-scroll data-scroll-speed="0.2" className='w-[50vw] h-[100%] overflow-y-visible flex'>
-          <img className=' md:-mt-10 z-20 md:h-[40vw] h-[30vh]  w-3/6 object-cover hover:scale-[1.05] transition-all object-center border-[1px] shadow-black shadow-lg border-white' src="../src/images/perfumes/nightperfume.png" alt="" />
+          <img className=' md:-mt-10 z-20 md:h-[40vw] h-[36vh] md:w-3/6 w-[70%] object-cover hover:scale-[1.05] transition-all object-center border-[1px] shadow-black shadow-lg border-white' src="../src/images/perfumes/nightperfume.png" alt="" />
         </div>
 
       </div>

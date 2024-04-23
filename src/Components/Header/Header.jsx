@@ -69,7 +69,7 @@ const close = ()=>{
      <h3 className='text-[1.5vw] bg-white rounded-full flex justify-center items-center w-[2vw] h-[2vw] text-black mb-4'>{bucket?.length}</h3>
      </div>
      </Link>
-     :  <div className='w-[8vw] max-md:mr-5 flex'><Link className=' md:right-10  border-2 px-[1.5vw] py-[0.7vw] justify-center items-center hover:text-xl transition-all border-[#F8CBFF] rounded-full ' to={'login'}>LOGIN</Link></div>
+     :  <div className='w-[8vw] md:mr-0 mr-10 flex'><Link className='border-2 px-[1.5vw] py-[0.7vw] justify-center items-center hover:text-xl transition-all border-[#F8CBFF] rounded-full ' to={'login'}>LOGIN</Link></div>
      }
      
 
