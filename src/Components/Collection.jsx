@@ -10,18 +10,18 @@ function Collection() {
       <div id='collection-banner-photo' className='w-full h-[20vw] flex flex-wrap justify-between'>
 
       </div>
-      <div className='w-full h-[7vw] bg-[#714486] junge  px-10 text-white items-center'>
-        <h1 className='text-[1.5vw] '>Products</h1>
+      <div className='w-full md:h-[7vw] h-[10vw] bg-[#714486] junge  px-10 text-white items-center'>
+        <h1 className='md:text-[1.5vw] text-[2.4vw]'>Products</h1>
 
         <div className='flex justify-between w-[70vw] '>
 
-        <div className='flex justify-between w-[10%] text-[1.8vw]'>
+        <div className='flex justify-between w-[10%] md:text-[1.8vw] text-[2.4vw]'>
           <FontAwesomeIcon icon={faFilter} />
           <h4>Filter</h4>
         </div>
 
 
-        <div className='flex items-center text-[1.6vw] justify-between w-[40vw]'>
+        <div className='flex items-center md:text-[1.6vw] text-[2.4vw] gap-[4vw] justify-between '>
           
               <h3>All</h3>
               <h3>Best Seller</h3>
@@ -33,7 +33,7 @@ function Collection() {
         </div>
 
       </div>
-      <div  className='w-full  flex flex-wrap justify-center gap-10 p-10'>
+      <div className='w-full md:min-h-screen flex md:gap-14 gap-5 justify-center flex-wrap p-10 px-[10vw]'>
       <ProductCard title='Ocean Breeze' description={"Refreshing notes of sea salt, bergamot, and driftwood capture the invigorating essence of a coastal breeze, perfect for those who love the ocean's embrace."} price={299} image={"https://img.freepik.com/free-photo/top-view-male-self-care-product_23-2150347092.jpg?size=626&ext=jpg&ga=GA1.1.1687116295.1709187295&semt=ais"} />
       <ProductCard title='Golden Sunset' description={"Experience the warmth of a golden sunset with this fragrance, blending notes of amber, mandarin, and sandalwood for a radiant and uplifting olfactory journey."} price={599} image={"https://img.freepik.com/free-photo/dark-glass-bottle-with-single-liquid-drop-generative-ai_188544-9634.jpg?size=626&ext=jpg&ga=GA1.1.1687116295.1709187295&semt=ais"} />
       <ProductCard title='Midnight Orchid' description={"A mysterious and seductive blend of dark orchids, black currant, and velvety vanilla, designed to allure and captivate under the veil of night."} price={349} image={"https://img.freepik.com/free-vector/vector-3d-realistic-cosmetic-background-with-glass-jar-night-cosmetics_33099-1145.jpg?size=626&ext=jpg&ga=GA1.1.1687116295.1709187295&semt=ais"} />

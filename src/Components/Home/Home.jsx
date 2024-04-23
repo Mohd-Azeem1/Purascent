@@ -257,7 +257,7 @@ useGSAP(()=>{
 
       <div className='w-full h-[10vh] bg-[#714486] mt-5 arizonia text-3xl text-[#EABEFF] flex justify-evenly items-center '>Our Collection</div>
 
-      <div className='w-full md:min-h-screen flex md:gap-28 gap-14 justify-center flex-wrap p-10 px-[10vw]'>
+      <div className='w-full md:min-h-screen flex md:gap-14 gap-5 justify-center flex-wrap p-10 px-[10vw]'>
       <ProductCard title='Ocean Breeze' description={"Refreshing notes of sea salt, bergamot, and driftwood capture the invigorating essence of a coastal breeze, perfect for those who love the ocean's embrace."} price={299} image={"https://img.freepik.com/free-photo/top-view-male-self-care-product_23-2150347092.jpg?size=626&ext=jpg&ga=GA1.1.1687116295.1709187295&semt=ais"} />
       <ProductCard title='Golden Sunset' description={"Experience the warmth of a golden sunset with this fragrance, mandarin, and sandalwood for a radiant and uplifting olfactory journey."} price={299} image={"https://img.freepik.com/free-photo/dark-glass-bottle-with-single-liquid-drop-generative-ai_188544-9634.jpg?size=626&ext=jpg&ga=GA1.1.1687116295.1709187295&semt=ais"} />
       <ProductCard title='Midnight Orchid' description={"A mysterious and seductive blend of dark orchids, black currant, and velvety vanilla, designed to allure and captivate under the veil of night."} price={299} image={"https://img.freepik.com/free-vector/vector-3d-realistic-cosmetic-background-with-glass-jar-night-cosmetics_33099-1145.jpg?size=626&ext=jpg&ga=GA1.1.1687116295.1709187295&semt=ais"} />

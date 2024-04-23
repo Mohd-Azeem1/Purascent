@@ -58,7 +58,7 @@ function SignUp() {
                       <input type="email" value={email}  onChange={(e)=>{setEmail(e.target.value);}}  className='w-full bg-transparent text-white border-b-2 mb-3 ' />
                       <h3 className='junge text-[#F8CBFF]'>Password</h3>
                       <input type="password"  value={password} onChange={(e)=>{setPassword(e.target.value);}} className='w-full bg-transparent text-white border-b-2 mb-3 ' />
-                      <div className='flex justify-center items-center w-full '><h1 className='text-white text-[1.8vw] m-auto'>Already have an account <span className='text-[#F8CBFF] '><Link to={'/login'}>Login</Link></span></h1></div>
+                      <div className='flex justify-center items-center w-full '><h1 className='text-white md:text-[1.8vw] text-[2.5vw] m-auto'>Already have an account <span className='text-[#F8CBFF] '><Link to={'/login'}>Login</Link></span></h1></div>
                       <button type='submit' onClick={(e)=>{handleSignUp(e)}} className='junge w-full py-[.7vw] px-[3vw] rounded-full mx-auto md:mt-[1vw] mt-[5vw] hover:scale-[1.1] transition-all  text-[#fff] bg-[#F8CBFF] border-[1px] border-white'>Sign Up</button>
                   </div>
               </div>
