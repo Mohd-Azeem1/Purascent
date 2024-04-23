@@ -221,7 +221,7 @@ function About() {
               suggestions are invaluable to us. Feel free to reach out to us
               with any questions, comments, or ideas at 'msajifdf123@gmail.com'.
             </h3>
-            <h3 className="junge md:text-[1.5vw] text-[3vw] text-center text-[#EABEFF]">
+            <h3 className="arizonia md:text-[1.5vw] text-[5vw] text-center text-[#EABEFF]">
             Thank you for joining us on this imaginative ad venture with Purascent.
             </h3>
             

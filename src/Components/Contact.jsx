@@ -54,7 +54,7 @@ function Contact() {
               <h2 className="junge max-md:w-[w-full] md:text-[1.2vw] text-[3vw]">Cityville, State, Zip Code</h2>
               <h2 className="junge max-md:w-[w-full] md:text-[1.2vw] text-[3vw]">Country</h2>
             </div>
-            <h1 className="arizonia md:text-[2.5vw] text-[5vw] text-[#EABEFF]">
+            <h1 className="arizonia max-md:w-full text-center md:text-[2.5vw] text-[5vw] text-[#EABEFF]">
               Social Media
             </h1>
             <h2 className="junge max-md:w-full text-center md:text-[1.5vw] text-[3vw]">
@@ -89,7 +89,7 @@ function Contact() {
                 </a>
               </h2>
             </div>
-            <h1 className="arizonia max-md:w-full text-center md:text-[2.5vw] text-[3vw] text-[#EABEFF] mt-8">
+            <h1 className="arizonia max-md:w-full text-center md:text-[2.5vw] text-[5vw] text-[#EABEFF] mt-8">
             Thank you for choosing Purascent. We look forward to hearing from you!
             </h1>
           </div>
