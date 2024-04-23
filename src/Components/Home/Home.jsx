@@ -257,9 +257,9 @@ useGSAP(()=>{
 
       <div className='w-full h-[10vh] bg-[#714486] mt-5 arizonia text-3xl text-[#EABEFF] flex justify-evenly items-center '>Our Collection</div>
 
-      <div className='w-full md:min-h-screen flex gap-10 justify-center flex-wrap p-5 px-[10vw]'>
+      <div className='w-full md:min-h-screen flex md:gap-28 gap-14 justify-center flex-wrap p-10 px-[10vw]'>
       <ProductCard title='Ocean Breeze' description={"Refreshing notes of sea salt, bergamot, and driftwood capture the invigorating essence of a coastal breeze, perfect for those who love the ocean's embrace."} price={299} image={"https://img.freepik.com/free-photo/top-view-male-self-care-product_23-2150347092.jpg?size=626&ext=jpg&ga=GA1.1.1687116295.1709187295&semt=ais"} />
-      <ProductCard title='Golden Sunset' description={"Experience the warmth of a golden sunset with this fragrance, blending notes of amber, mandarin, and sandalwood for a radiant and uplifting olfactory journey."} price={299} image={"https://img.freepik.com/free-photo/dark-glass-bottle-with-single-liquid-drop-generative-ai_188544-9634.jpg?size=626&ext=jpg&ga=GA1.1.1687116295.1709187295&semt=ais"} />
+      <ProductCard title='Golden Sunset' description={"Experience the warmth of a golden sunset with this fragrance, mandarin, and sandalwood for a radiant and uplifting olfactory journey."} price={299} image={"https://img.freepik.com/free-photo/dark-glass-bottle-with-single-liquid-drop-generative-ai_188544-9634.jpg?size=626&ext=jpg&ga=GA1.1.1687116295.1709187295&semt=ais"} />
       <ProductCard title='Midnight Orchid' description={"A mysterious and seductive blend of dark orchids, black currant, and velvety vanilla, designed to allure and captivate under the veil of night."} price={299} image={"https://img.freepik.com/free-vector/vector-3d-realistic-cosmetic-background-with-glass-jar-night-cosmetics_33099-1145.jpg?size=626&ext=jpg&ga=GA1.1.1687116295.1709187295&semt=ais"} />
       <ProductCard title='Whimsical Bloom' description={"A whimsical bouquet of fresh peonies, blooming roses, and dewy freesias, encapsulating the joyful essence of a spring garden."} price={299} image={"https://img.freepik.com/premium-photo/perfumery_160204-1535.jpg?size=626&ext=jpg&ga=GA1.1.1687116295.1709187295&semt=ais"} />
       <ProductCard title='Mystic Ember' description={"An enchanting fragrance with notes of smoky oud wood, spicy cinnamon, and sweet vanilla, reminiscent of a mystical journey by the firelight."} price={299} image={"https://img.freepik.com/free-photo/front-view-expensive-fragnance-with-flowers-dark-background-color-perfume-gift-present-love-marriage-scent-flower_140725-158075.jpg?size=626&ext=jpg&ga=GA1.1.1687116295.1709187295&semt=ais"} />
@@ -275,7 +275,7 @@ useGSAP(()=>{
       <div id='page6' className='w-full flex h-[60vw] bg-light-50'>
 
         <div className='w-[60%] flex justify-center items-center py-10'>
-          <h4 className='junge collection_article text-[1.5vw] text-white w-[60%]'>Embark on an olfactory journey and explore our exquisite perfume collection. Each fragrance is meticulously crafted to evoke emotions, memories, and moments of pure bliss. From captivating florals to intoxicating woody notes and refreshing citrus blends, our collection offers a scent for every mood and occasion. Discover the essence of luxury, sophistication, and individuality within our carefully curated selection. Allow our perfumes to transport you to a world of unparalleled elegance and sensory delight. Begin your exploration today and uncover the perfect fragrance that resonates with your unique style and personality.</h4>
+          <h4 className='junge collection_article md:text-[1.5vw] text-[1.8vw] text-white w-[70%]'>Embark on an olfactory journey and explore our exquisite perfume collection. Each fragrance is meticulously crafted to evoke emotions, memories, and moments of pure bliss. From captivating florals to intoxicating woody notes and refreshing citrus blends, our collection offers a scent for every mood and occasion. Discover the essence of luxury, sophistication, and individuality within our carefully curated selection. Allow our perfumes to transport you to a world of unparalleled elegance and sensory delight. Begin your exploration today and uncover the perfect fragrance that resonates with your unique style and personality.</h4>
         </div>
 
         <div className='w-40% bg-light-300 h-[60vw] flex flex-col justify-evenly items-center'> 
@@ -286,22 +286,24 @@ useGSAP(()=>{
       </div>
 
       
-          <div  data-scroll data-scroll-speed="0.06" className='w-full  bg-[#704485] flex justify-center items-center shadow-[0px_-10px_10px_10px_rgba(0,0,0,0.3)]'>
-            <div className='w-[32vw] h-[32vw] flex justify-center items-center flex-col arizonia'>
-              <div id='Azeem' className='w-[7vw] h-[7vw] rounded-full'></div>
-              <h1 className='text-white text-[2vw] border-b-[1px] border-[#EABEFF]'>Mohd Azeem</h1>
-              <h1 className='text-white text-[2vw] border-b-[1px] border-[#EABEFF] text-center'>This is a college final year project made by Mohd Azeem.</h1>
-              <h1 className='text-white text-[2vw] border-b-[1px] border-[#EABEFF]'>Contact</h1>
-              <div className='flex justify-between'>
-              <div className='flex flex-col items-center w-[25vw]'>
-              <h1 className='text-[#EABEFF] text-[2vw] border-b-[1px] border-[#EABEFF]'>Email</h1>
-              <h1 className='text-[#fff] text-[2vw]  '>msajifdf123@gmail.com</h1>
-              </div>
-    
-              <div className='flex flex-col items-center w-[30vw]'>
-              <h1 className='text-[#EABEFF] text-[2vw] border-b-[1px] border-[#EABEFF]'>What's App</h1>
-              <h1 className='text-[#fff] text-[2vw]  '>9058872916</h1>
-              </div>
+          <div  data-scroll data-scroll-speed="0.06" className='w-full p-10 bg-[#704485] flex justify-center items-center shadow-[0px_-10px_10px_10px_rgba(0,0,0,0.3)]'>
+            <div className=' flex justify-center items-center flex-col arizonia'>
+              <div id='Azeem' className='md:w-[7vw] w-[13vw] md:h-[7vw] h-[13vw] rounded-full'></div>
+              <h1 className='text-white md:text-[2vw] text-[4.5vw] border-b-[1px] border-[#EABEFF]'>Mohd Azeem</h1>
+              <h1 className='text-white md:text-[2vw] text-[4.5vw] md:w-[32vw] w-[80vw] border-b-[1px] border-[#EABEFF] text-center'>This is a college final year project made by Mohd Azeem.</h1>
+              <h1 className='text-white md:text-[2vw] text-[4.5vw] border-b-[1px] border-[#EABEFF]'>Contact</h1>
+              
+              <div className='flex gap-5 justify-between'>
+
+                <div className='flex flex-col items-center w-[25vw]'>
+                  <h1 className='text-[#EABEFF] md:text-[2vw] text-[4.5vw] border-b-[1px] border-[#EABEFF]'>Email</h1>
+                  <h1 className='text-[#fff] md:text-[2vw] text-[4vw]'>msajifdf123@gmail.com</h1>
+                </div>
+        
+                <div className='flex flex-col items-center w-[30vw]'>
+                  <h1 className='text-[#EABEFF] md:text-[2vw] text-[4.5vw] border-b-[1px] border-[#EABEFF]'>What's App</h1>
+                  <h1 className='text-[#fff] md:text-[2vw] text-[4vw]  '>9058872916</h1>
+                </div>
               </div>
     
             </div>

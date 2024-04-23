@@ -26,23 +26,23 @@ function ProductCard({id=Date.now(), title='Perfume', description, price=499, im
 
 
   return (
-    <div id='product-card' className='w-[20vw] h-[30vw] relative hover:scale-[1.03] hover:shadow-[10px_10px_10px_10px_rgba(0,0,0,0.4)] h transition-all'>
+    <div id='product-card' className='md:w-[25vw] w-[30vw] md:h-[35vw] h-[40vw] relative hover:scale-[1.03] hover:shadow-[10px_10px_10px_10px_rgba(0,0,0,0.4)] h transition-all'>
         <img className='w-full h-full object-cover object-center' src={image} alt="" />
 
       <div id='product-card-info' className='w-full h-1/2 md:hidden bg-gradient-to-t from-black backdrop-blur-sm absolute bottom-0 p-4 py-1 junge flex flex-col transition-all'>
         <div>
-        <h1 className=' text-[1.4vw] text-white'>{title}</h1>
-        <h1 className=' text-[.7vw] text-white'>{description ? description :'Lorem ipsum dolor sit amet consectetur '}</h1>
+        <h1 className='text-[2.3vw] text-white'>{title}</h1>
+        <h1 className=' text-[1.2vw] leading-snug text-white'>{description ? description :'Lorem ipsum dolor sit amet consectetur '}</h1>
         </div>
 
         <div className='flex justify-between items-center h-[3vw] text-white '>
-            <h1 className='text-[1.3vw]'>Price:  <span className='text-[#EABEFF]'>${price}</span></h1>
+            <h1 className='md:text-[1.3vw] text-[1.7vw]'>Price:  <span className='text-[#EABEFF]'>${price}</span></h1>
             <div>
-            <Link to={'collection'}><Button className='text-[1vw]' children="Buy"/></Link>
+            <Link to={'collection'}><Button className='md:text-[1vw] text-[1.5vw] mb-3' children="Buy"/></Link>
             </div>
         </div>
         
-        <button onClick={addToCart} className='junge w-full mt-[.5vw] mx-auto rounded-md text-[1.5vw]  text-black mb-5 bg-[#EABEFF]'>Add to cart</button>
+        <button onClick={addToCart} className='junge w-full mt-[1vw] mx-auto rounded-md text-[1.5vw]  text-black mb-5 bg-[#EABEFF]'>Add to cart</button>
 
 
         
