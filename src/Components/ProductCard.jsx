@@ -27,7 +27,7 @@ function ProductCard({id=Date.now(), title='Perfume', description, price=499, im
 
   return (
     <div id='product-card' className='md:w-[25vw] w-[90vw] md:h-[35vw] h-[100vw] mx-auto relative hover:scale-[1.03] hover:shadow-[10px_10px_10px_10px_rgba(0,0,0,0.4)] h transition-all'>
-        <img className='w-full h-full object-cover object-center' src={image} alt="" />
+        <Link to={`product/:${id}`}><img className='w-full h-full object-cover object-center' src={image} alt="" /></Link>
 
       <div id='product-card-info' className='w-full h-1/2 md:hidden bg-gradient-to-t from-black backdrop-blur-sm absolute bottom-0 p-4 py-1 junge flex flex-col transition-all'>
         <div>

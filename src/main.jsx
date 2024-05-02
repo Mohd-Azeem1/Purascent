@@ -13,6 +13,9 @@ import SignUp from './Components/SignUp.jsx'
 import About from './Components/About.jsx'
 import LinkedInlink from './Components/LinkedInLink.jsx'
 import Contact from './Components/Contact.jsx'
+import Product from './Components/Product.jsx'
+
+
 
 
 
@@ -20,14 +23,17 @@ import Contact from './Components/Contact.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />}>
-      <Route path='' element={<Home />}/>
-      <Route path='login' element={<Login />}/>
-      <Route path='signup' element={<SignUp />}/>
-      <Route path='collection' element={<Collection />}/>
-      <Route path='cart' element={<Cart />}/>
-      <Route path='about' element={<About />}/>
-      <Route path='contact' element={<Contact />}/>
-      <Route path='linkedin' element={<LinkedInlink />}/>
+      
+        <Route path='' element={<Home />}/>
+        <Route path='login' element={<Login />}/>
+        <Route path='signup' element={<SignUp />}/>
+        <Route path='collection' element={<Collection />}/>
+        <Route path='cart' element={<Cart />}/>
+        <Route path='about' element={<About />}/>
+        <Route path='contact' element={<Contact />}/>
+        <Route path='product/:productId' element={<Product />}/>
+        <Route path='linkedin' element={<LinkedInlink />}/>
+      
     </Route>       
   )
 )
