@@ -38,7 +38,7 @@ function ProductCard({id=Date.now(), title='Perfume', description, price=499, im
         <div className='flex justify-between md:mt-[3vw] mt-[7vw] items-center h-[3vw] text-white '>
             <h1 className='md:text-[1.3vw] text-[5vw]'>Price:  <span className='text-[#EABEFF]'>${price}</span></h1>
             <div>
-            <Link to={'collection'}><Button className='md:text-[1vw] max-md:px-[3vw] text-[7vw] mb-3' children="Buy"/></Link>
+            <Link to={`product/:${id} `}><Button className='md:text-[1vw] max-md:px-[3vw] text-[7vw] mb-3' children="Buy"/></Link>
             </div>
         </div>
         
