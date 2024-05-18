@@ -11,7 +11,6 @@ import Collection from './Components/Collection.jsx'
 import Cart from './Components/Cart/Cart.jsx'
 import SignUp from './Components/SignUp.jsx'
 import About from './Components/About.jsx'
-import LinkedInlink from './Components/LinkedInLink.jsx'
 import Contact from './Components/Contact.jsx'
 import Product from './Components/Product.jsx'
 
@@ -32,7 +31,7 @@ const router = createBrowserRouter(
         <Route path='about' element={<About />}/>
         <Route path='contact' element={<Contact />}/>
         <Route path='product/:productId' element={<Product />}/>
-        <Route path='linkedin' element={<LinkedInlink />}/>
+        
       
     </Route>       
   )

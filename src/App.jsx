@@ -11,6 +11,10 @@ import LocomotiveScroll from 'locomotive-scroll';
 
 function App() {
 
+  // setInterval(()=>{
+  //   document.getElementsByClassName("loading-tems").style.backgroundColor = "#c0c0c0b2"
+  // })
+
 
   const locomotiveScroll = new LocomotiveScroll();
   
@@ -34,12 +38,17 @@ function App() {
   
 
   return loading ? (
-    <div className='w-screen h-screen'></div>
+    <div className='w-screen h-screen'>
+      <div className='w-1/2 h-full flex items-center justify-evenly'>
+        <div className='h-1/2 w-full rounded bg-[#c0c0c0] m-5'></div>
+        <div className='h-1/2 w-full rounded bg-[#c0c0c0] m-5'></div>
+      </div>
+    </div>
   ) : (
-    <div className='bg-black overflow-x-hidden'>
-    <Header />
-    <Outlet />
-    <Footer />
+    <div className='bg-black overflow-x-hidden '>
+       <Header />
+       <Outlet />
+       <Footer />
     </div>
   )
 }
