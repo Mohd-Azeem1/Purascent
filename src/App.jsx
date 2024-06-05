@@ -38,11 +38,11 @@ function App() {
   
 
   return loading ? (
-    <div className='w-screen h-screen'>
-      <div className='w-1/2 h-full flex items-center justify-evenly'>
+    <div className='w-screen h-screen bg-[#3A0D4F]'>
+      {/* <div className='w-1/2 h-full flex items-center justify-evenly'>
         <div className='h-1/2 w-full rounded bg-[#c0c0c0] m-5'></div>
         <div className='h-1/2 w-full rounded bg-[#c0c0c0] m-5'></div>
-      </div>
+      </div> */}
     </div>
   ) : (
     <div className='bg-black overflow-x-hidden '>

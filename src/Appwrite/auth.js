@@ -1,61 +1,67 @@
 import conf from "../conf/conf";
 import { Client, Account, ID } from "appwrite";
 
-export class Authservice{
-    client = new Client();
-    account;
+export class Authservice {
+    constructor() {
+        // Log configuration values for debugging
+        console.log("Appwrite URL:", conf.appwriteUrl);
+        console.log("Appwrite Project ID:", conf.appwriteProjectId);
 
-    constructor(){
-        this.client
-           .setEndpoint(conf.appwriteUrl)
-           .setProject(conf.appwriteProjectId);
-        this.account = new Account(this.client)
-        console.log(this.account)
+        // Initialize and configure the client inside the constructor
+        this.client = new Client()
+            .setEndpoint(conf.appwriteUrl)
+            .setProject(conf.appwriteProjectId);
+
+        // Log the client configuration for debugging
+        console.log("Appwrite Client:", this.client);
+
+        // Initialize the Account service with the configured client
+        this.account = new Account(this.client);
+        console.log(this.account);
     }
 
-    async createAccount({email, password, name}){
+    async createAccount({ email, password, name }) {
         try {
-            const userAccount = await this.account.create(ID.unique(), email, password, name)
-            if(userAccount){
-                console.log(userAccount)
-                return this.login({email, password});
-            }else{
-                return userAccount
+            const userAccount = await this.account.create(ID.unique(), email, password, name);
+            if (userAccount) {
+                console.log(userAccount);
+                return this.login({ email, password });
+            } else {
+                return userAccount;
             }
         } catch (error) {
-            throw error
+            console.error("Appwrite service :: createAccount :: error", error);
+            throw error;
         }
     }
 
-    async login(data){
-        const email = data.email;
-        const password = data.password
-        console.log(data)
+    async login(data) {
+        const { email, password } = data;
+        console.log(data);
         try {
-            return await this.account.createEmailSession({email, password})
+            return await this.account.createEmailSession(email, password);
         } catch (error) {
-            console.log("Appwrite service :: login :: error", error)
-            throw error
+            console.error("Appwrite service :: login :: error", error);
+            throw error;
         }
     }
 
-    async getCurrentUser(){
+    async getCurrentUser() {
         try {
-            return this.account.get()
+            return await this.account.get();
         } catch (error) {
-            console.log("Appwrite service :: getCurrentUser :: error", error);
+            console.error("Appwrite service :: getCurrentUser :: error", error);
+            return null;
         }
-        return null
     }
 
-    async logout(){
+    async logout() {
         try {
             await this.account.deleteSessions();
         } catch (error) {
-            console.log("Appwrite service :: logout :: error", error)
+            console.error("Appwrite service :: logout :: error", error);
         }
     }
 }
 
 export const authService = new Authservice();
-

@@ -100,14 +100,10 @@ function Header() {
             onClick={() => {
               close();
             }}
-            className={({ isActive }) =>
-              `hover:tracking-widest ${
-                isActive ? "scale-[1.2]" : "scale-[1]"
-              } res-nav-item opacity-0 top-[10vh] border-[1px] border-[#F8CBFF] fixed hover:scale-[1.1] px-2 py-1 transition-all `
-            }
+            className = "hover:tracking-widest res-nav-item opacity-0 top-[10vh] border-[1px] border-[#F8CBFF] fixed hover:scale-[1.1] px-2 py-1 transition-all "
             key={item.name}
           >
-            <Link to={item.slug}>{item.name}</Link>
+            <NavLink to={item.slug} className={({ isActive }) => isActive ? "scale-[1.2] tracking-widest" : "scale-[1]" }>{item.name}</NavLink>
           </li>
         ))}
       </ul>
