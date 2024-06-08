@@ -105,3 +105,9 @@
     background-position: center;
     background-size: cover;
 }
+
+#user-img{
+    background-image: url(./images/user_image.png);
+    background-position: center;
+    background-size: cover;
+}
