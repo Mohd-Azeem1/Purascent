@@ -33,6 +33,21 @@ function Header() {
     },
   ];
 
+  const profileItems = [
+    {
+      name:"My Profile",
+      slug: "/profile"
+    },
+    {
+      name: "My Orders",
+      slug: "/orders"
+    },
+    {
+      name: "My Cart",
+      slug:"/cart"
+    }
+  ];
+
   const [openOrClose, setOpenOrClose] = useState(false);
   const menu = useRef();
   const tl = useRef();
@@ -85,7 +100,7 @@ function Header() {
 
       <ul
         ref={menu}
-        className="sidebar bg-[#3A0D4F] fixed top-0 left-0 w-[40vw] h-screen flex-col p-5 gap-[1vw] tracking-wider shadow-[_10px_10px_10px_rgba(0,0,0,0.3)] z-50 transform translate-x-[-100%] opacity-0"
+        className="sidebar bg-[#3A0D4F] fixed top-0 left-0 w-[40vw] h-screen flex-col p-5 gap-[1vw] tracking-wider shadow-[_10px_10px_10px_rgba(0,0,0,0.3)] transform translate-x-[-100%] opacity-0"
       >
         <li onClick={close} className="mb-7 cursor-pointer">
           <FontAwesomeIcon icon={faX} />
@@ -139,6 +154,23 @@ function Header() {
               alt=""
             />
           </div>
+          <ul
+            id="profileSideBar"
+            className=" bg-[#3A0D4F] fixed top-0 right-0 w-[50vw] md:w-[10vw]  flex-col p-5 gap-[1vw] tracking-wider shadow-[-10px_10px_10px_rgba(0,0,0,0.3)] transform translate-x-[00%] "
+          >
+          <li className="mb-7 cursor-pointer ">
+          <FontAwesomeIcon icon={faX} />
+        </li>
+        {
+          profileItems.map((item)=> (
+            <li
+            
+            className="hover:tracking-widest res-nav-item border-b-[1px] border-[#F8CBFF] hover:scale-[1.1] px-1 pr-2 py-1/2 transition-all"
+            key={item.name}
+          ><Link to={item.slug}>{item.name}</Link></li>
+          ))
+        }
+          </ul>
         </div>
       ) : (
         <div className="w-[8vw] md:mr-0 mr-10 flex">

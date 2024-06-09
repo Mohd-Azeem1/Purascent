@@ -7,6 +7,8 @@ import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
 import { Outlet } from 'react-router-dom'
 import LocomotiveScroll from 'locomotive-scroll';
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 
 function App() {
@@ -35,14 +37,20 @@ function App() {
     .finally(()=>setLoading(false))
   },[])
 
+  useGSAP(()=>{
+    gsap.to("#loding_cercle",{
+      rotate: 360,
+      duration: 1,
+      repeat: -1,
+      ease: 'none'
+    })
+  })
+
   
 
   return loading ? (
-    <div className='w-screen h-screen bg-[#3A0D4F]'>
-      {/* <div className='w-1/2 h-full flex items-center justify-evenly'>
-        <div className='h-1/2 w-full rounded bg-[#c0c0c0] m-5'></div>
-        <div className='h-1/2 w-full rounded bg-[#c0c0c0] m-5'></div>
-      </div> */}
+    <div className='w-screen h-screen bg-[#3A0D4F] flex items-center justify-center'>
+      <div id='loding_cercle' className=' bg-transparent rounded-full border-[#EABEFF]  border-t-[5px] border-b-[5px] md:h-[10vw] md:w-[10vw] h-[10vw] w-[10vw]'></div>
     </div>
   ) : (
     <div className='bg-black overflow-x-hidden '>

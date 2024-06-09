@@ -13,6 +13,8 @@ import SignUp from './Components/SignUp.jsx'
 import About from './Components/About.jsx'
 import Contact from './Components/Contact.jsx'
 import Product from './Components/Product.jsx'
+import Profile from './Components/Profile.jsx'
+import Orders from './Components/Orders.jsx'
 
 
 
@@ -30,6 +32,8 @@ const router = createBrowserRouter(
         <Route path='cart' element={<Cart />}/>
         <Route path='about' element={<About />}/>
         <Route path='contact' element={<Contact />}/>
+        <Route path='profile' element={<Profile/>}/>
+        <Route path='orders' element={<Orders/>}/>
         <Route path='product/:productId' element={<Product />}/>
         
       
