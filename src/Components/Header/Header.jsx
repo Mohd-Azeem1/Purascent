@@ -26,80 +26,83 @@ function Header() {
 
   // SideBar animations
   const [openOrClose, setOpenOrClose] = useState(false);
-  const menu = useRef();
-  const tl = useRef();
+  const menu = useRef(null);
+  const tl = useRef(null);
   const [pMOpenClose, setpMOpenClose] = useState(false);
-  const pMenu = useRef();
-  const tl2 = useRef();
+  const pMenu = useRef(null);
+  const tl2 = useRef(null);
 
   useEffect(() => {
-    // Initialize the GSAP timelines
-    tl.current = gsap.timeline({ paused: true });
-    tl.current
-      .to(menu.current, {
-        x: 0,
-        opacity: 1,
-        duration: 0.5,
-        ease: "power2.out",
-        display: "flex",
-      })
-      .fromTo(
-        menu.current.children,
-        { x: -100, opacity: 0 },
-        {
+    if (menu.current) {
+      tl.current = gsap.timeline({ paused: true });
+      tl.current
+        .to(menu.current, {
           x: 0,
           opacity: 1,
           duration: 0.5,
-          stagger: 0.1,
           ease: "power2.out",
-        },
-        "-=0.4"
-      );
+          display: "flex",
+        })
+        .fromTo(
+          menu.current.children,
+          { x: -100, opacity: 0 },
+          {
+            x: 0,
+            opacity: 1,
+            duration: 0.5,
+            stagger: 0.1,
+            ease: "power2.out",
+          },
+          "-=0.4"
+        );
+    }
 
-    tl2.current = gsap.timeline({ paused: true });
-    tl2.current
-      .to(pMenu.current, {
-        x: 0,
-        opacity: 1,
-        duration: 0.5,
-        ease: "power2.out",
-        display: "flex",
-      })
-      .fromTo(
-        pMenu.current.children,
-        { x: 100, opacity: 0 },
-        {
+    if (pMenu.current) {
+      tl2.current = gsap.timeline({ paused: true });
+      tl2.current
+        .to(pMenu.current, {
           x: 0,
           opacity: 1,
           duration: 0.5,
-          stagger: 0.1,
           ease: "power2.out",
-        },
-        "-=0.4"
-      );
+          display: "flex",
+        })
+        .fromTo(
+          pMenu.current.children,
+          { x: 100, opacity: 0 },
+          {
+            x: 0,
+            opacity: 1,
+            duration: 0.5,
+            stagger: 0.1,
+            ease: "power2.out",
+          },
+          "-=0.4"
+        );
+    }
   }, []);
 
   useEffect(() => {
-    openOrClose ? tl.current.play() : tl.current.reverse();
-  }, [openOrClose]);
+    if (tl.current) {
+      openOrClose ? tl.current.play() : tl.current.reverse();
+    }
+    if (tl2.current) {
+      pMOpenClose ? tl2.current.play() : tl2.current.reverse();
+    }
+  }, [openOrClose, pMOpenClose]);
 
-  useEffect(() => {
-    pMOpenClose ? tl2.current.play() : tl2.current.reverse();
-  }, [pMOpenClose]);
-
-  const toggleMenu = () => {
+  const close = () => {
     setOpenOrClose(!openOrClose);
-    if (pMOpenClose) setpMOpenClose(false); // Ensure profile menu is closed
   };
 
-  const toggleProfileMenu = () => {
+  // Profile bar animations
+  const handlePClick = () => {
     setpMOpenClose(!pMOpenClose);
-    if (openOrClose) setOpenOrClose(false); // Ensure main menu is closed
   };
 
   return (
     <header className="w-full z-[99] h-[2vh] md:h-[10vh] max-md:h-10 fixed text-[#F8CBFF] backdrop-blur-[3vh] justify-between items-center px-12 max-md:px-2 py-8 flex junge">
-      <div onClick={toggleMenu} className="md:hidden hover:text-xl cursor-pointer">
+      <div onClick={close} className="md:hidden hover:text-xl cursor-pointer">
         <FontAwesomeIcon icon={faBars} />
       </div>
 
@@ -117,12 +120,12 @@ function Header() {
         ref={menu}
         className="sidebar bg-[#3A0D4F] fixed top-0 left-0 w-[40vw] h-screen flex-col p-5 gap-[1vw] tracking-wider shadow-[_10px_10px_10px_rgba(0,0,0,0.3)] transform translate-x-[-100%] opacity-0"
       >
-        <li onClick={toggleMenu} className="mb-7 cursor-pointer">
+        <li onClick={close} className="mb-7 cursor-pointer">
           <FontAwesomeIcon icon={faX} />
         </li>
         {navItems.map((item) => (
           <li
-            onClick={toggleMenu}
+            onClick={close}
             className="hover:tracking-widest res-nav-item border-b-[1px] border-[#F8CBFF] hover:scale-[1.1] px-1 pr-2 py-1/2 transition-all"
             key={item.name}
           >
@@ -164,7 +167,7 @@ function Header() {
 
           {/* Profile icon */}
           <div
-            onClick={toggleProfileMenu}
+            onClick={handlePClick}
             id="profile-icon"
             className="rounded-full md:h-[2.5vw] h-[8vw] md:w-[2.5vw] w-[8vw] overflow-hidden"
           >
@@ -175,9 +178,9 @@ function Header() {
           <ul
             ref={pMenu}
             id="profileSideBar"
-            className=" bg-[#3A0D4F] fixed top-0 right-0 w-[50vw] md:w-[10vw] flex-col p-5 gap-[1vw] tracking-wider shadow-[-10px_10px_10px_rgba(0,0,0,0.3)] transform translate-x-[120%] opacity-0"
+            className="bg-[#3A0D4F] fixed top-0 right-0 w-[50vw] md:w-[10vw] flex-col p-5 gap-[1vw] tracking-wider shadow-[-10px_10px_10px_rgba(0,0,0,0.3)] transform translate-x-[120%] opacity-0"
           >
-            <li onClick={toggleProfileMenu} className="mb-7 cursor-pointer ">
+            <li onClick={handlePClick} className="mb-7 cursor-pointer">
               <FontAwesomeIcon icon={faX} />
             </li>
             {profileItems.map((item) => (
@@ -192,7 +195,6 @@ function Header() {
         </div>
       ) : (
         <div className="w-[8vw] md:mr-0 mr-10 flex">
-          {/* Login Button */}
           <Link
             className="border-2 px-[1.5vw] py-[0.7vw] justify-center items-center hover:text-xl transition-all border-[#F8CBFF] rounded-full"
             to="login"
@@ -206,4 +208,3 @@ function Header() {
 }
 
 export default Header;
-
