@@ -5,6 +5,9 @@ import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import gsap from "gsap";
+import HeaderLogo from "./HeaderLogo";
+import Navbar from "./Navbar";
+import SideBar from "./SideBar";
 
 function Header() {
   // Variable declarations
@@ -106,17 +109,21 @@ function Header() {
         <FontAwesomeIcon icon={faBars} />
       </div>
 
-      <div className="w-[10vw] flex">
+      <HeaderLogo />
+
+      {/* <div className="w-[10vw] flex">
         <NavLink
           className="hover:tracking-widest hover:scale-[1.05] transition-all text-2xl max-md:text-sm justify-center items-center shadow-[#F8CBFF]"
           to="/"
         >
           PURASCENT
         </NavLink>
-      </div>
+      </div> */}
 
       {/* SideBar */}
-      <ul
+
+      <SideBar menu={menu} navItems={navItems} close={close} />
+      {/* <ul
         ref={menu}
         className="sidebar bg-[#3A0D4F] fixed top-0 left-0 w-[40vw] h-screen flex-col p-5 gap-[1vw] tracking-wider shadow-[_10px_10px_10px_rgba(0,0,0,0.3)] transform translate-x-[-100%] opacity-0"
       >
@@ -139,10 +146,13 @@ function Header() {
             </NavLink>
           </li>
         ))}
-      </ul>
+      </ul> */}
 
       {/* Main nav items */}
-      <ul id="main_nav_bar" className="flex max-md:hidden gap-[2vw] tracking-wider">
+
+      <Navbar navItems={navItems}/>
+
+      {/* <ul id="main_nav_bar" className="flex max-md:hidden gap-[2vw] tracking-wider">
         {navItems.map((item) => (
           <li
             className="hover:tracking-widest hover:scale-[1.1] hover:border-[1px] hover:border-[#F8CBFF] px-2 py-1 transition-all rounded-full"
@@ -151,7 +161,7 @@ function Header() {
             <Link to={item.slug}>{item.name}</Link>
           </li>
         ))}
-      </ul>
+      </ul> */}
 
       {/* Conditional Login button or Cart icon */}
       {authStatus ? (
