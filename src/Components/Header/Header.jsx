@@ -8,6 +8,9 @@ import gsap from "gsap";
 import HeaderLogo from "./HeaderLogo";
 import Navbar from "./Navbar";
 import SideBar from "./SideBar";
+import AuthButtons from "./AuthButtons";
+import ProfileMenu from "./ProfileMenu";
+
 
 function Header() {
   // Variable declarations
@@ -164,55 +167,8 @@ function Header() {
       </ul> */}
 
       {/* Conditional Login button or Cart icon */}
-      {authStatus ? (
-        <div id="cart-profile-icon-container" className="flex md:gap-5 gap-2">
-          <Link to="/cart">
-            <div className="md:text-[2vw] text-[7vw] items-center flex">
-              <FontAwesomeIcon icon={faCartShopping} />
-              <h3 className="md:text-[1.5vw] text-[5vw] md:w-[2vw] w-[5vw] md:h-[2vw] h-[5vw] bg-white rounded-full flex justify-center items-center text-black mb-4">
-                {bucket?.length}
-              </h3>
-            </div>
-          </Link>
-
-          {/* Profile icon */}
-          <div
-            onClick={handlePClick}
-            id="profile-icon"
-            className="rounded-full md:h-[2.5vw] h-[8vw] md:w-[2.5vw] w-[8vw] overflow-hidden"
-          >
-            <img id="user-img" className="h-full w-full rounded-full" alt="" />
-          </div>
-
-          {/* Profile menu bar */}
-          <ul
-            ref={pMenu}
-            id="profileSideBar"
-            className="bg-[#3A0D4F] fixed top-0 right-0 w-[50vw] md:w-[10vw] flex-col p-5 gap-[1vw] tracking-wider shadow-[-10px_10px_10px_rgba(0,0,0,0.3)] transform translate-x-[120%] opacity-0"
-          >
-            <li onClick={handlePClick} className="mb-7 cursor-pointer">
-              <FontAwesomeIcon icon={faX} />
-            </li>
-            {profileItems.map((item) => (
-              <li
-                className="hover:tracking-widest res-nav-item border-b-[1px] border-[#F8CBFF] hover:scale-[1.1] px-1 pr-2 py-1/2 transition-all"
-                key={item.name}
-              >
-                <Link to={item.slug}>{item.name}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : (
-        <div className="w-[8vw] md:mr-0 mr-10 flex">
-          <Link
-            className="border-2 px-[1.5vw] py-[0.7vw] justify-center items-center hover:text-xl transition-all border-[#F8CBFF] rounded-full"
-            to="login"
-          >
-            LOGIN
-          </Link>
-        </div>
-      )}
+     <AuthButtons authStatus={authStatus} bucket={bucket} handlePClick={handlePClick}/>
+     <ProfileMenu pMenu={pMenu} profileItems={profileItems} handlePClick={handlePClick}/>
     </header>
   );
 }
