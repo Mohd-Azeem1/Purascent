@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 import { authService } from '../Appwrite/auth'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-
+import { login as authlogin } from '../Store/authslice'
 
 function Login() {
 
 
   const [email,setEmail] = useState('')
   const [password,setPassword] = useState('')
-  const [error, setError] = useState("")
+  const [Error, setError] = useState("")
   const dispatch = useDispatch()
   const navigate = useNavigate()
 
@@ -22,15 +22,20 @@ function Login() {
     setError("")
     try {
       const session = await authService.login(data)
+      console.log(session)
       if(session){
         const userData = await authService.getCurrentUser();
+        console.log(userData)
         if(userData){
           dispatch(authlogin(data))
         }
+        console.log("login completed")
         navigate('/')
       }
     } catch (error) {
       setError(error.message)
+      console.log(Error)
+      throw error;
     }
   }
 

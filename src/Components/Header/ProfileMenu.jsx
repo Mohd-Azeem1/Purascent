@@ -3,7 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom';
 
-const ProfileMenu = ({pMenu, profileItems, handlePClick}) => {
+const ProfileMenu = ({pMenu, profileItems, handlePClick, handleLogout}) => {
+  
   return (
     <ul
             ref={pMenu}
@@ -14,11 +15,12 @@ const ProfileMenu = ({pMenu, profileItems, handlePClick}) => {
               <FontAwesomeIcon icon={faX} />
             </li>
             {profileItems.map((item) => (
-              <li
+              <li onClick={handlePClick}
                 className="hover:tracking-widest res-nav-item border-b-[1px] border-[#F8CBFF] hover:scale-[1.1] px-1 pr-2 py-1/2 transition-all"
                 key={item.name}
               >
-                <Link to={item.slug}>{item.name}</Link>
+                {item.name === "Logout" ? (<button onClick={handleLogout}>{item.name}</button>) : (<Link to={item.slug}>{item.name}</Link>)}
+                
               </li>
             ))}
           </ul>
